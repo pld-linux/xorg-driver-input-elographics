@@ -1,5 +1,5 @@
 Summary:	X.org input driver for Elographics touchscreen devices
-Summary(pl):	Sterownik wej∂ciowy X.org dla ekranÛw dotykowych Elographics
+Summary(pl.UTF-8):   Sterownik wej≈õciowy X.org dla ekran√≥w dotykowych Elographics
 Name:		xorg-driver-input-elographics
 Version:	1.1.0
 Release:	0.1
@@ -24,10 +24,10 @@ X.org input driver for Elographics touchscreen devices. E271-2210 and
 E271-2200 devices are supported. E281-2310 and compatible devices are
 supported with some features unavailable.
 
-%description -l pl
-Sterownik wej∂ciowy X.org dla ekranÛw dotykowych Elographics.
-Obs≥ugiwane s± urz±dzenia E271-2210 i E271-2200, natomiast E281-2381 i
-kompatybilne s± obs≥ugiwane bez niektÛrych moøliwo∂ci.
+%description -l pl.UTF-8
+Sterownik wej≈õciowy X.org dla ekran√≥w dotykowych Elographics.
+Obs≈Çugiwane sƒÖ urzƒÖdzenia E271-2210 i E271-2200, natomiast E281-2381 i
+kompatybilne sƒÖ obs≈Çugiwane bez niekt√≥rych mo≈ºliwo≈õci.
 
 %prep
 %setup -q -n xf86-input-elographics-%{version}
