@@ -2,7 +2,7 @@ Summary:	X.org input driver for Elographics touchscreen devices
 Summary(pl.UTF-8):	Sterownik wejściowy X.org dla ekranów dotykowych Elographics
 Name:		xorg-driver-input-elographics
 Version:	1.4.1
-Release:	1
+Release:	2
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-input-elographics-%{version}.tar.bz2
