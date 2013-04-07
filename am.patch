@@ -1,0 +1,11 @@
+--- xf86-input-elographics-1.4.1/configure.ac~	2012-08-20 03:11:22.000000000 +0200
++++ xf86-input-elographics-1.4.1/configure.ac	2013-04-07 21:32:35.289061214 +0200
+@@ -35,7 +35,7 @@
+ # Require xorg-macros: XORG_CWARNFLAGS, XORG_CHANGELOG
+ m4_ifndef([XORG_MACROS_VERSION], [AC_FATAL([must install xorg-macros 1.2 or later before running autoconf/autogen])])
+ XORG_MACROS_VERSION(1.2)
+-AM_CONFIG_HEADER([config.h])
++AC_CONFIG_HEADERS([config.h])
+ 
+ # Checks for programs.
+ AC_DISABLE_STATIC
