@@ -1,23 +1,25 @@
 Summary:	X.org input driver for Elographics touchscreen devices
 Summary(pl.UTF-8):	Sterownik wejściowy X.org dla ekranów dotykowych Elographics
 Name:		xorg-driver-input-elographics
-Version:	1.4.2
+Version:	1.4.3
 Release:	1
 License:	MIT
 Group:		X11/Applications
-Source0:	https://xorg.freedesktop.org/releases/individual/driver/xf86-input-elographics-%{version}.tar.bz2
-# Source0-md5:	e71459c1c6e818f4d43ecaaf26462ec5
-Patch0:		am.patch
+Source0:	https://xorg.freedesktop.org/releases/individual/driver/xf86-input-elographics-%{version}.tar.xz
+# Source0-md5:	33ca93941115889d7e04f051b27d190a
 URL:		https://xorg.freedesktop.org/
-BuildRequires:	autoconf >= 2.57
+BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 1:0.19
+BuildRequires:  rpmbuild(macros) >= 1.389
+BuildRequires:	tar >= 1:1.22
 BuildRequires:	xorg-proto-inputproto-devel
 BuildRequires:	xorg-proto-randrproto-devel
-BuildRequires:	xorg-util-util-macros >= 1.2
+BuildRequires:	xorg-proto-xproto-devel
+BuildRequires:	xorg-util-util-macros >= 1.8
 BuildRequires:	xorg-xserver-server-devel >= 1.10.0
-BuildRequires:  rpmbuild(macros) >= 1.389
+BuildRequires:	xz
 %{?requires_xorg_xserver_xinput}
 Requires:	xorg-xserver-server >= 1.10.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -34,7 +36,6 @@ kompatybilne są obsługiwane bez niektórych możliwości.
 
 %prep
 %setup -q -n xf86-input-elographics-%{version}
-%patch0 -p1
 
 %build
 %{__libtoolize}
